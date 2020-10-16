@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fitness Macro Calculator</title>
+
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+<div class="calccontainer">
+    <div class="step1 steps">
+        <div class="header">
+            Step 1: Calculate Your TDEE (daily calories required)
+        </div>
+        <div>
+            
+                        <div class="desctext"><h2 class="mainheadings">Macro Calculator</h2>
+            The macro calculator is first flexible dieting tool of its kind. We developed it to be the most comprehensive and easy to  use fitness calculator for people following the diet. The macro calculator takes the guess work out of dieting. All you have to do is enter your details, select your goals and retrieve your macros. We have added a few options in step 3 for those of you that like to manipulate your protein and fats, but the default settings are PERFECT for most people!
+            <br>If you are ready to use for flexible dieting, this is the best tool you will find! Scroll down to get started with the Macro Calculator now!
+            </div>
+           <div class="dottedline"></div>
+                       
+           <div class="padding3"></div>
+           
+           <div class="leftlabel">Gender: </div>
+           <div class="rightside radioticks">
+               <input type="radio" name="dm-gender" id="male" value="M" checked="checked" /> <label for="male">Male</label>
+               <input type="radio" name="dm-gender" id="female" value="F" /> <label for="female">Female</label>
+               <div id="gendererror" class="errortext" style="display: none !important;"><div class="padding1"></div>Choose your gender</div>
+           </div>
+           
+           <div class="padding3"></div>
+           <div class="leftlabel">Age: </div>
+           <div class="rightside">
+            <div class="floatleft"><input name="dm-age" type="text" class="inputbox dolyearbackground" id="agevalue" value="35"/></div>
+            <div id="ageerror" class="errortext" style="display: none !important;"><div class="padding1"></div>Age is required!</div>
+           </div>
+           
+           <div class="padding3"></div>
+           <div class="leftlabel">Height: </div>
+           <div class="rightside">
+            <div class="floatleft">
+                <div id="heightfit">
+                    <input type="text" class="inputbox dolyearbackground floatleft" id="heightvalue" value="6" style="width: 40px !important; margin-right: 7px !important;"/> <span class="floatleft" style="margin-right: 7px !important;">ft</span>
+                    <input type="text" class="inputbox dolyearbackground floatleft" id="heightinvalue" value="0" style="width: 40px !important; margin-right: 7px !important;"/> in
+                </div>
+                <div id="heightcms" style="display: none !important;">
+                    <input type="text" class="inputbox dolyearbackground floatleft" id="heightvalue" value="72" style="width: 100px !important; margin-right: 7px !important;"/> cm
+                </div>
+                <div style="margin-top: 6px !important;" class="radioticks" id="cm-system-wrapper">
+                    <input type="radio" value="imperial" checked="checked" name="cm-system"> <label>Imperial</label>  <input type="radio" value="metric" name="cm-system"> <label>Metric</label>
+                </div>
+            </div>
+            <div id="heighterror" class="errortext" style="display: none !important;"><div class="padding1"></div>Height and weight are required!</div>
+            <!--<div class="floatleft">
+                
+                <div id="imerialheight">
+                                  </div>
+                <div id="metricheight"  style="display: none !important;">
+                </div>
+            </div>-->
+           </div>
+           
+           <div class="padding3"></div>
+           <div class="leftlabel">Weight: </div>
+           <div class="rightside">
+            <div class="floatleft"><input type="text" class="inputbox dolyearbackground" id="weightvalue" value="150"/></div>
+            <div class="floatleft" id="weightmeasure" style="margin-left: 10px !important;">lbs</div>
+            <!--<div class="floatleft">
+                <div id="imperialweight">
+                </div>
+                <div id="metricweight" style="display: none !important;">
+                </div>
+            </div>-->
+           </div>
+           
+           
+           <div class="padding3"></div>
+           <div class="leftlabel">Formula: </div>
+           <div class="rightside radioticks">
+               <input type="radio" name="formula" id="optMS" value="M" checked="checked" /> <label for="optMS">Athletes Formula (best for lean people)</label>
+               <br><input type="radio" name="formula" id="optLM" value="L" /> <label for="optLM">Lean Mass Formula (best if overweight)</label>
+               
+           </div>
+           <div class="padding2"></div>
+           <div id="txtBF" style="display: none !important;">
+               <div class="leftlabel">Current Body Fat %: </div>
+               <div class="rightside radioticks">
+                  <input name="txtBF" type="text" class="inputbox dolyearbackground" value="6"/>
+               </div>
+           </div>
+           
+           <div class="padding3"></div>
+           <div class="how_would_you"><div class="fullinelabel">How would you describe your normal daily activities? </div>
+           <div class="radioticks">
+               <div><input type="radio" name="normaldailyactivity" id="Sedentary" value="1.15" checked="checked" /> <label for="Sedentary"><b>Sedentary: </b> Spend most of the day sitting (e.g. bank taller, desk job)</label></div>
+               <div class="padding2"></div>
+               <div><input type="radio" name="normaldailyactivity" id="Lightly" value="1.25" /> <label for="Lightly"><b>Lightly Activity: </b> Spend a good part of the day on your feet (e.g. teacher, salesman)</label></div>
+               <div class="padding2"></div>
+               <div><input type="radio" name="normaldailyactivity" id="Active" value="1.35" /> <label for="Active"><b>Active: </b> Spend a good part of the day doing some physical activity (e.g. waitress, mailman)</label></div>
+               <div class="padding2"></div>
+               <div><input type="radio" name="normaldailyactivity" id="VeryActive" value="1.4" /> <label for="VeryActive"><b>Very Active: </b> Spend most of the day doing heavy physical activity (e.g. bike messanger, carpenter)</label></div>
+               
+           </div>
+           </div>
+           
+           <div class="padding3"></div>
+           <div class="how_would_you"><div class="fullinelabel">How many week days per week do you exercise? </div>
+           <div class="radioticks">
+               <div class="leftlabel"><input type="text" name="" class="inputbox" id="excerciseweek" value="4" /></div>
+               <div class="rightside radioticks">
+               </div>
+           </div>
+           </div>
+           
+           <div class="padding3"></div>
+           <div class="how_would_you"><div class="fullinelabel">How many minutes per day do you exercise (cardio & weight lifting combined)? </div>
+           <div class="radioticks">
+               <div class="leftlabel"><input type="text" name="" class="inputbox" id="excerciseminuteweek" value="120" /></div>
+               <div class="rightside radioticks">
+               </div>
+           </div>
+           </div>
+           
+           <div class="padding3"></div>
+           <div class="how_would_you"><div class="fullinelabel">How intense is your excercise? </div>
+           <div class="radioticks">
+               <div><input type="radio" name="intenseexercise" id="Light" value="5" checked="checked" /> <label for="Light"><b>Light: </b> I can hold a conversation while working out and do not break a sweet.</label></div>
+               <div class="padding2"></div>
+               <div><input type="radio" name="intenseexercise" id="Moderate" value="7.5" /> <label for="Moderate"><b>Moderate: </b> I am breathing hard and challenge myself.</label></div>
+               <div class="padding2"></div>
+               <div><input type="radio" name="intenseexercise" id="Difficult" value="10" /> <label for="Difficult"><b>Difficult: </b> I always break a sweat and have an elevated heart rate. I cannot hold a conversation.</label></div>
+               <div class="padding2"></div>
+               <div><input type="radio" name="intenseexercise" id="Intense" value="12" /> <label for="Intense"><b>Intense: </b> Don"t talk to to me, don"t look at me. I am here for a purpose and i might die today.</label></div>
+               
+           </div>
+           </div>
+           <!--<div class="padding3"></div>
+           <div class="leftlabel">Exercise level: </div>
+           <div class="rightside radioticks">
+               <!--<select id="cm-activity" name="cm-activity">
+                    <option value="1.0">Basal Metabolic Rate</option>
+                    <option class="hilite" value="1.2">No exercise (desk job/couch potato)</option>
+                    <option value="1.375" selected="selected">3 times/week</option>
+                    <option class="hilite" value="1.4187">4 times/week</option>
+                    <option value="1.4625">5 times/week</option>
+                    <option class="hilite" value="1.5063">6 times/week</option>
+                    <option class="hilite" value="1.550">5 times/week (*intense)</option>
+                    <option value="1.6375">Every day</option>
+                    <option class="hilite" value="1.725">Every day (*intense) or twice daily</option>
+                    <option value="1.9">Daily exercise + physical job</option>
+                </select>--
+                <div class="floatleft"><input id="cm-activity" name="cm-activity" type="text" class="inputbox dolyearbackground" value="1.2"/></div>
+                <div class="floatleft">
+                </div>
+           </div>-->
+           
+           <div class="padding3"></div>
+           
+           <div style="float: center !important; text-align: center !important;">
+                <button class="cm-button cm-button-calories redbutton calculate_tdee">Calculate Your TDEE</button>
+            </div>
+            <div class="righthelpquote">
+                <div id="cm-result-bmr" style="display: none !important;">
+                    <span class="boldtext">Your BMR is: </span>
+                    <span class="bigpaytext">
+                        <span class="cm-result-box-value">2286</span>
+                        <span class="cm-result-box-text">Calories/Day</span>
+                    </span>
+                </div>
+                <div id="cm-result-tdee" style="display: none !important;">
+                    <span id="cm-result-tdee-text" class="boldtext">Your TDEE is:</span>
+                    <span class="cm-result-box bigpaytext">
+                        <span class="cm-result-box-value">3443</span>
+                        <span class="cm-result-box-text">Calories/Day</span>
+                    </span>
+                </div>
+            </div>
+           
+           <div class="padding1"></div>
+        </div>
+    </div>
+    
+    <div class="padding3"></div>
+    
+    <div class="step1 steps">
+        <div class="header">
+            Step 2: Choose Your Goals (and pick your intensity)
+        </div>
+        <div class="padding3"></div>
+        <div>
+            <div class="choose_your_goals">
+                <div class="metricsdata">
+                    <div class="heading">Fat loss</div>
+                    <div class="mainnumbers" id="cm-calories-fat-loss-text">1121</div>
+                    <div class="metricsin">Calories/Day</div>
+                </div>
+                <div class="metricsdata">
+                    <div class="heading">Maintain</div>
+                    <div class="mainnumbers" id="cm-calories-maintenance-text">1121</div>
+                    <div class="metricsin">Calories/Day</div>
+                </div>
+                <div class="metricsdata">
+                    <div class="heading">Bulking</div>
+                    <div class="mainnumbers" id="cm-calories-bulking-text">1121</div>
+                    <div class="metricsin">Calories/Day</div>
+                </div>
+                <div class="metricsdata">
+                    <div class="heading">Custom</div>
+                    <div class="mainnumbers"><input style="border: none !important; text-align: center !important;" class="mainnumbers custom_calories" type="text" value="0000" name="cm-calories-other"></div>
+                    <div class="metricsin">Calories/Day</div>
+                </div>
+                <div class="padding1"></div>
+                <div class="undersuggestions">
+                    <div >
+                        <input type="radio" id="cm-calories-fat-loss15" class="cm-calories-fat-loss" name="cm-calories" value="1121"> <strong>Suggested</strong> 15%<br>
+                        <input type="radio" id="cm-calories-fat-loss20" class="cm-calories-fat-loss" name="cm-calories" value="1055" checked="checked"> <strong>Aggressive</strong> 20%<br>
+                        <input type="radio" id="cm-calories-fat-loss25" class="cm-calories-fat-loss" name="cm-calories" value="989"> <strong>Reckless</strong> 25%
+                    </div>
+                </div>
+                <div class="undersuggestions">
+                    <div style="text-align: left !important;">
+                        <input type="radio" id="cm-calories-maintenance" class="cm-calories-maintenance" name="cm-calories" value="1319"> Same as TDEE
+                    </div>
+                </div>
+                <div class="undersuggestions">
+                    <div style="text-align: left !important;">
+                        <input type="radio" id="cm-calories-bulking5" class="cm-calories-bulking" name="cm-calories" value="726"> <strong>Cautious</strong> 5%<br>
+                        <input type="radio" id="cm-calories-bulking10" class="cm-calories-bulking" name="cm-calories" value="760"> <strong>Text Book</strong> 10%<br>
+                        <input type="radio" id="cm-calories-bulking15" class="cm-calories-bulking" name="cm-calories" value="795"> <strong>Aggressive</strong> 15%
+                    </div>
+                </div>
+                <div class="undersuggestions">
+                    <div style="text-align: left !important;">
+                        <input type="radio" id="cm-calories-other" name="cm-calories" value="other"> <span id="cm-enter-your-own">Enter Your Own</span><br>
+                    </div>
+                </div>
+                <div class="padding1"></div>
+            </div>
+        </div>
+     </div>
+     
+     
+     <!--Step 3-->
+     <div class="padding3"></div>
+     <div class="step1 steps">
+        <div class="header">
+            Step 3: Select Your Nutrition Plan (we suggest Balanced)
+        </div>
+        <div class="padding3"></div>
+        
+        <div class="leftlabel">Choose Plans</div>
+        <div class="rightside">
+            <div style="float: left !important;" class="choose_plans"><select class="fancyselect" id="cm-ratios" name="cm-ratios" multiple="">
+                <option selected="selected" id="cdr-iifym" data-name="iifym">Balanced (recommended) </option>
+                <option data-fat="25" data-protein="25" data-carbs="50" data-name="moderate">Textbook</option>
+                <option data-fat="20" data-protein="40" data-carbs="40" data-name="moderate-ii">Body Builder (out dated) </option>
+                <option data-fat="30" data-protein="30" data-carbs="40" data-name="zone-diet">Zone Diet</option>
+                <option data-fat="15" data-protein="25" data-carbs="60" data-name="low-fat">Low Fat</option>
+                <option data-fat="35" data-protein="40" data-carbs="25" data-name="low-carb">Low Carb</option>
+                <option data-fat="65" data-protein="30" data-carbs="5" data-name="very-low-carb">Ketogenic (Atkins)</option>
+                <option data-fat="" data-protein="" data-carbs="" data-name="very-low-carb">Enter Your Own Ratio</option>
+            </select></div>
+            <div style="float: left !important; max-width: 250px !important; text-align: right !important;" class="plans_calculate">
+                <button style="padding-left:40px !important;padding-right:40px !important;" id="cm-calc-button" class="cm-button cm-calc-button redbutton">Calculate</button>
+            </div>
+        </div>
+        <div class="padding3"></div>
+        
+        <div>
+            <div class="choos_plans_3boxes1">
+                <div class="cm-left iifym-no-show metricsdata" style="display: none !important;">
+                    <label class="heading">Fat</label>
+                    <div class="mainnumbers"><input type="text" value="--" id="cm-fat" name="cm-fat" class="mainnumbers step3inputbox" placeholder="30"></div><div class="metricsin">%</div>
+                    
+                </div>
+                <div class="cm-left iifym-no-show metricsdata" style="display: none !important;">
+                    <label class="heading">Carbs</label>
+                    <div class="mainnumbers"><input type="text" value="--" id="cm-carbs" name="cm-carbs" class="mainnumbers step3inputbox" placeholder="40"></div>
+                    <div class="metricsin">%</div>
+                </div>
+                <div class="cm-left iifym-no-show metricsdata" style="display: none !important;">
+                    <label class="heading">Protein</label>
+                    <div class="mainnumbers"><input type="text" value="--" id="cm-protein" name="cm-protein" class="mainnumbers step3inputbox" placeholder="30"></div>
+                    <div class="metricsin">%</div>
+                </div>
+                <div class="padding1"></div>
+                <div id="carboerror" class="carboerror errortext"></div>
+            </div>
+            
+            <div class="choos_plans_3boxes2">
+                <div class="iifym-show metricsdata" style="display: block !important;">
+                    <label class="heading" style="font-size: 16px !important;">Protein<br>(4 calories per gram)</label>
+                    <div style="text-align: left !important;font-size: 14px !important;margin-top: 10px !important;"><input type="radio" checked="checked" value="1" name="cm-iifym-protein">1.00 <span class="gramsperlb">grams per lb. of body weight</span><br>
+                    <input type="radio" value="1.15" name="cm-iifym-protein">1.15 <span class="gramsperlb">grams per lb. of body weight</span><br>
+                    <input type="radio" value="1.25" name="cm-iifym-protein">1.25 <span class="gramsperlb">grams per lb. of body weight</span><br>
+                    <input type="radio" value="other" name="cm-iifym-protein">Custom <input type="text" id="cm-iifym-protein-other" name="cm-iifym-protein-other" value=".8" style="width: 27px !important;"> <span class="gramsperlb">grams per lb. of body weight</span></div>
+                </div>
+                <div class="iifym-show metricsdata" style="display: block !important;">
+                    <label class="heading" style="font-size: 16px !important;">Fat <br>(9 calories per gram)</label>
+                    <div style="text-align: left !important;font-size: 14px !important;margin-top: 10px !important;">
+                    <input type="radio" value=".35" name="cm-iifym-fat">.35 <span class="gramsperlb">grams per lb. of body weight</span><br>
+                    <input type="radio" checked="checked" value=".40" name="cm-iifym-fat">.40 <span class="gramsperlb">grams per lb. of body weight</span><br>
+                    <input type="radio" value=".45" name="cm-iifym-fat">.45 <span class="gramsperlb">grams per lb. of body weight</span><br>
+                    <input type="radio" value="other" name="cm-iifym-fat">Custom <input type="text" id="cm-iifym-fat-other" name="cm-iifym-fat-other" value=".5" style="width: 27px !important;"> <span class="gramsperlb">grams per lb. of body weight</span>
+                    </div>
+                </div>
+                <div class="iifym-show metricsdata" style="display: block !important; margin-right: 5px !important;">
+                    <label class="heading" style="font-size: 16px !important;">Carbs <br>(4 calories per gram)</label>
+                    <div style="text-align: left !important;font-size: 14px !important;margin-top: 10px !important;">Carbohydrates are calculated based on the calories you have remaining after calories from protein and fat have been subtracted from your TDEE.</div>
+                </div>
+                <div class="padding1"></div>
+            </div>
+            <div class="padding3"></div>
+        </div>
+     </div>
+     
+     <!--Step 4-->
+     <div class="padding3"></div>
+     <div class="step1 steps">
+        <div class="header">
+            Step 4: Your Results
+        </div>
+        <div class="padding3"></div>
+        <div class="cs-results"><table >
+            <tr>
+                <td></td>
+                <td><strong><span class="results_span">CARBS</span></strong></td>
+                <td><strong><span class="results_span">PROTEIN</span></strong></td>
+                <td><strong><span class="results_span">FAT</span></strong></td>
+                <td><strong><span class="results_span">FIBER</span></strong></td>
+                <td id="cm-cals-head" class="cm-cals-col"><strong><span class="results_span">CALORIES</span></strong></td>
+            </tr>
+            <tr>
+                <td><span class="results_span">GRAMS per day</span></td>
+                <td id="cm-carbs-grams-day">280</td>
+                <td id="cm-protein-grams-day">6.9</td>
+                <td id="cm-fat-grams-day">2.4</td>
+                <td id="cm-fiber-grams-day">1 - 2</td>
+                <td id="cm-total-cals-day" class="cm-cals-col">1169</td>
+            </tr>
+            <tr>
+                <td colspan="6">
+                    <select id="cm-meals-per-day" name="cm-meals-per-day">
+                        <option value="one">1 meals per day</option>
+                        <option value="two">2 meals per day</option>
+                        <option selected="selected" value="three">3 meals per day</option>
+                        <option value="four">4 meals per day</option>
+                        <option value="five">5 meals per day</option>
+                        <option value="six">6 meals per day</option>
+                        <option value="seven">7 meals per day</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>GRAMS per meal</td>
+                <td id="cm-carbs-grams-meal">93.3</td>
+                <td id="cm-protein-grams-meal">2.3</td>
+                <td id="cm-fat-grams-meal">0.8</td>
+                <td id="cm-fiber-grams-meal">0 - 1</td>
+                <td id="cm-total-cals-meal" class="cm-cals-col">390</td>
+            </tr>
+       </table></div>
+       
+        <div class="padding3"></div>
+     </div>
+</div>
+</body>
+</html>
