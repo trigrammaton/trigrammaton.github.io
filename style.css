@@ -73,7 +73,7 @@ border-radius: 3px !important; -moz-border-radius: 3px !important; -webkit-borde
 
 .righthelpquote .redcolor {font-size: 24px !important; color: #de0202 !important; margin-left: 20px !important;}
 
-.bigpaytext{color: #D18e8e !important; font-weight: bold !important; font-size: 24px !important; padding-left: 10px !important;}
+.bigpaytext{color: #fff !important; font-weight: bold !important; font-size: 24px !important; padding-left: 10px !important;}
 
 #ltvnegative, #ltvhinttext{display: none !important;}
 
