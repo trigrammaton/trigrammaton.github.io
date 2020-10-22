@@ -3,7 +3,7 @@ border-radius: 5px !important; background: #D18e8e !important; width: 100% !impo
 
 .calccontainer input[type="text"] {padding: 8px 5px !important; background: #fff !important; border: 1px solid #666 !important; font-size: 16px !important; -webkit-appearance:none !important;}
 
-.calccontainer input[type="text"]:focus {border: 1px solid #3abc4e !important;}
+.calccontainer input[type="text"]:focus {border: 1px solid #D18e8e !important;}
 
 .header{font-size: 20px !important; color:#fff !important; font-family: 'Times New Roman', serif !important; font-weight: 700 !important;}
 
@@ -50,7 +50,7 @@ input[type="radio"]{margin: 0px !important;}
 
 .radioticks label {float: left !important; clear: none !important; display: block !important; padding: 0 1em 0 3px !important;}
 
-.redbutton{background-color: #3abc4e !important; border: 1px solid #3abc4e !important; text-align: center !important; padding: 10px !important; color: #ffffff !important; cursor: pointer !important; font-size: 14px !important;
+.redbutton{background-color: #fff !important; border: 1px solid #fff !important; text-align: center !important; padding: 10px !important; color: #D18e8e !important; cursor: pointer !important; font-size: 14px !important;
 border-radius: 3px !important; -moz-border-radius: 3px !important; -webkit-border-radius: 3px !important;}
 
 .redbutton:hover {border: 1px solid #D18e8e !important; background-color: #D18e8e !important;}
@@ -73,13 +73,13 @@ border-radius: 3px !important; -moz-border-radius: 3px !important; -webkit-borde
 
 .righthelpquote .redcolor {font-size: 24px !important; color: #de0202 !important; margin-left: 20px !important;}
 
-.bigpaytext{color: #3abc4e !important; font-weight: bold !important; font-size: 24px !important; padding-left: 10px !important;}
+.bigpaytext{color: #D18e8e !important; font-weight: bold !important; font-size: 24px !important; padding-left: 10px !important;}
 
 #ltvnegative, #ltvhinttext{display: none !important;}
 
 .metricsdata {background: #FFFFFF !important; padding: 10px !important; float: left !important; width: 150px !important; text-align: center !important; border-radius: 10px !important; margin-right: 10px !important; border: 1px solid #ccc !important;}
 
-.metricsdata .heading {font-size: 20px !important; color: #4F92BD !important;}
+.metricsdata .heading {font-size: 20px !important; color: #D18e8e !important;}
 
 .metricsdata .mainnumbers {color: #000 !important; font-size: 24px !important;}
 
@@ -123,25 +123,25 @@ border-radius: 3px !important; -moz-border-radius: 3px !important; -webkit-borde
 
 .cs-results tr:last-child td:last-child{border-width: 0px 0px 0px 0px !important;}
 
-.cs-results tr:first-child td{background:-o-linear-gradient(bottom, #4f92bd 5%, #4f92bd 100%);	
-background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #4f92bd), color-stop(1, #4f92bd)) !important;
-background:-moz-linear-gradient( center top, #4f92bd 5%, #4f92bd 100% );
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#4f92bd", endColorstr="#4f92bd");	background: -o-linear-gradient(top,#4f92bd,4f92bd) !important;
-background-color: #4f92bd !important; border: 0px solid #cccccc !important;
+.cs-results tr:first-child td{background:-o-linear-gradient(bottom, #D18e8e 5%, #D18e8e 100%);	
+background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #D18e8e), color-stop(1, #D18e8e)) !important;
+background:-moz-linear-gradient( center top, #D18e8e 5%, #D18e8e 100% );
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#D18e8e", endColorstr="#D18e8e");	background: -o-linear-gradient(top #D18e8e,#D18e8e) !important;
+background-color: #D18e8e !important; border: 0px solid #cccccc !important;
 text-align: center !important; border-width: 0px 0px 1px 1px !important; font-size: 16px !important;font-weight: bold !important; color: #ffffff !important;}
 
 .cs-results tr:first-child:hover td{
-background:-o-linear-gradient(bottom, #4f92bd 5%, #4f92bd 100%);	
-background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4f92bd), color-stop(1, #4f92bd) ) !important;
-background:-moz-linear-gradient( center top, #4f92bd 5%, #4f92bd 100% );
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#4f92bd", endColorstr="#4f92bd");	background: -o-linear-gradient(top,#4f92bd,4f92bd) !important;
-background-color:#4f92bd !important;}
+background:-o-linear-gradient(bottom, #D18e8e 5%, ##D18e8e 100%);	
+background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #D18e8e), color-stop(1, #D18e8e) ) !important;
+background:-moz-linear-gradient( center top, #D18e8e 5%, #D18e8e 100% );
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#D18e8e", endColorstr="#D18e8e");	background: -o-linear-gradient(top,#D18e8e,#D18e8e) !important;
+background-color:#D18e8e !important;}
 
 .cs-results tr:first-child td:first-child{border-width:0px 0px 1px 0px !important;}
 
 .cs-results tr:first-child td:last-child{border-width:0px 0px 1px 1px !important;}
 
-.errortext{color:#3abc4e !important;}
+.errortext{color:#D18e8e !important;}
 
 .mainheadings{color:#D18e8e !important;margin:0px !important;}
 
@@ -183,16 +183,15 @@ background-color:#4f92bd !important;}
 .bigpaytext {font-size: 20px !important; padding-left: 5px !important;}
 .how_would_you {margin-left: 15px !important;}
 
-
-.calc_contact_form {margin-top: 25px !important; min-height: 382px; border: 2px solid #3abc4e !important; border-radius: 5px !important; 
+.calc_contact_form {margin-top: 25px !important; min-height: 382px; border: 2px solid #D18e8e !important; border-radius: 5px !important; 
 background: #f6f5f5 !important; width: 100% !important; max-width: 760px !important;}
-.calc_contact_form .header{background: #3abc4e !important; padding: 10px !important; color: #FFFFFF !important;}
+.calc_contact_form .header{background: #D18e8e!important; padding: 10px !important; color: #FFFFFF !important;}
 .calc_contact_form form {padding: 10px 15px 0px;}
 
 .calc_contact_form input, .calc_contact_form textarea {width: 100% !important; max-width: 500px !important; padding: 8px 5px !important; background: #fff !important; border: 1px solid #666 !important; border-radius: 3px !important; margin-bottom: 10px; font-size: 16px !important; -webkit-appearance:none !important;}
-.calc_contact_form input:focus, .calc_contact_form textarea:focus {border: 1px solid #3abc4e !important;}
+.calc_contact_form input:focus, .calc_contact_form textarea:focus {border: 1px solid #D18e8e !important;}
 
-.calc_contact_form button {border: 1px solid #3abc4e !important; background-color: #3abc4e !important; text-align: center !important; float: left !important; padding: 10px !important; border-radius: 3px !important; -moz-border-radius: 3px !important; -webkit-border-radius: 3px !important; color: #ffffff !important; cursor: pointer !important; font-size: 14px !important;}
+.calc_contact_form button {border: 1px solid #D18e8e !important; background-color: #D18e8e !important; text-align: center !important; float: left !important; padding: 10px !important; border-radius: 3px !important; -moz-border-radius: 3px !important; -webkit-border-radius: 3px !important; color: #ffffff !important; cursor: pointer !important; font-size: 14px !important;}
 
 .calc_contact_form button:hover {border: 1px solid #D18e8e !important; background-color: #D18e8e !important;}
 
