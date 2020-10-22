@@ -5,6 +5,8 @@ border-radius: 5px !important; background: #D18e8e !important; width: 100% !impo
 
 .calccontainer input[type="text"]:focus {border: 1px solid #3abc4e !important;}
 
+.header{font-size: 20px !important; color:#fff !important; font-family: 'Times New Roman', serif !important; font-weight: 700 !important;}
+
 .calccontainer .steps .header{background: #D18e8e !important; padding: 10px !important; color: #fff !important;}
 
 .padding1{clear: both !important; height: 3px !important;}
