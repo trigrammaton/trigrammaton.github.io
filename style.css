@@ -5,7 +5,7 @@ border-radius: 5px !important; background: #D18e8e !important; width: 100% !impo
 
 .calccontainer input[type="text"]:focus {border: 1px solid #3abc4e !important;}
 
-.calccontainer .steps .header{background: #FFFFFF !important; padding: 10px !important; color: #FFFFFF !important;}
+.calccontainer .steps .header{background: #D18e8e !important; padding: 10px !important; color: #fff !important;}
 
 .padding1{clear: both !important; height: 3px !important;}
 .padding2{clear: both !important; height: 5px !important;}
@@ -15,10 +15,10 @@ input[type="radio"]{margin: 0px !important;}
 
 .mainheading{color:#D18e8e !important; font-family: 'Source Sans Pro', sans-serif !important; font-weight: 600 !important; font-size: 20px !important;}
 
-.leftlabel{float:left !important; text-align: right !important; width: 100% !important; max-width: 150px !important; color:#005495 !important; font-family: 'Source Sans Pro', sans-serif !important; font-weight: 700 !important; font-size: 16px !important;
+.leftlabel{float:left !important; text-align: right !important; width: 100% !important; max-width: 150px !important; color:#000000 !important; font-family: 'Source Sans Pro', sans-serif !important; font-weight: 700 !important; font-size: 16px !important;
 }
 
-.fullinelabel{margin:10px 0 3px !important; font-size: 16px !important; color:#005495 !important; font-family: 'Source Sans Pro', sans-serif !important; font-weight: 700 !important;}
+.fullinelabel{margin:10px 0 3px !important; font-size: 16px !important; color:#000000 !important; font-family: 'Source Sans Pro', sans-serif !important; font-weight: 700 !important;}
 
 .rightside{float:left !important; margin-left: 15px !important;}
 
@@ -40,9 +40,9 @@ input[type="radio"]{margin: 0px !important;}
 
 .ui-state-default, .ui-widget-content .ui-state-default{background: url(image/up_arrow.png) no-repeat !important; border: none !important; width: 11px !important; height: 15px !important;}
 
-.numbering{width: 368px !important; height: 20px !important; margin-top: -8px !important; margin-left: 36px !important; color: #005495 !important; font-size: 16px !important; font-weight: 300 !important;}
+.numbering{width: 368px !important; height: 20px !important; margin-top: -8px !important; margin-left: 36px !important; color: #000000 !important; font-size: 16px !important; font-weight: 300 !important;}
 
-.radioticks{color: #005495 !important; font-size: 16px !important; font-weight: 400 !important;}
+.radioticks{color: #000000 !important; font-size: 16px !important; font-weight: 400 !important;}
 
 .radioticks input[type="radio"], .radioticks input.radio {float: left !important; clear: none !important;}
 
@@ -65,7 +65,7 @@ border-radius: 3px !important; -moz-border-radius: 3px !important; -webkit-borde
 
 .boldtext{font-size: 16px !important; font-weight: 700 !important;}
 
-.righthelpquote{float: center !important; text-align: center !important; width: 100% !important; color: #005495 !important; margin-left: 32px !important; margin-top: 10px !important;}
+.righthelpquote{float: center !important; text-align: center !important; width: 100% !important; color: #000000 !important; margin-left: 32px !important; margin-top: 10px !important;}
 
 .righthelpquote .normaltext {font-size: 16px !important;}
 
@@ -141,9 +141,9 @@ background-color:#4f92bd !important;}
 
 .errortext{color:#3abc4e !important;}
 
-.mainheadings{color:#3abc4e !important;margin:0px !important;}
+.mainheadings{color:#D18e8e !important;margin:0px !important;}
 
-.desctext{color:#005495 !important;font-family: 'Source Sans Pro', sans-serif !important; font-weight: 400 !important;padding:13px !important;}
+.desctext{color:#000000 !important;font-family: 'Source Sans Pro', sans-serif !important; font-weight: 400 !important;padding:13px !important;}
 
 .dottedline{border:1px dashed #ccc !important;}
 
